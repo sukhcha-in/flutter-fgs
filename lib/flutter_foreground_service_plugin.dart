@@ -159,7 +159,7 @@ class FlutterForegroundServicePlugin {
     assert(periodicTaskFun != null);
 
     var rawTaskHandler =
-        PluginUtilities.getCallbackHandle(periodicTaskFun)!.toRawHandle();
+        PluginUtilities.getCallbackHandle(periodicTaskFun).toRawHandle();
 
     Map<String, dynamic> args = {
       'taskDelay': delay.inMilliseconds,
